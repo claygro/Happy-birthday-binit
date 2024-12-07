@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Roboto, sans-serif;
+  background-image: url(adi-goldstein-Hli3R6LKibo-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.binit {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  box-shadow: 0 0 10px blue;
+  object-fit: cover;
+}
+.loading {
+  position: relative;
+}
+.sector {
+  border-radius: 50%;
+  top: -1rem;
+  left: -1.3rem;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  animation: rotate var(--duration) var(--timing) infinite;
+  border: 9px solid transparent;
+  mix-blend-mode: overlay;
+}
+
+.red {
+  position: absolute;
+  border-top-color: lightcoral;
+  --duration: 1s;
+  --timing: ease-in;
+}
+.blue {
+  position: absolute;
+
+  --duration: 1.5s;
+  --timing: ease-in;
+  border-top-color: lightblue;
+}
+.green {
+  position: absolute;
+
+  --duration: 2s;
+  --timing: ease-in;
+  border-top-color: lightgreen;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.container {
+  display: flex;
+  justify-content: center;
+  height: 90vh;
+  align-items: center;
+}
+.top {
+  text-align: center;
+  margin-top: 20px;
+  color: white;
+}
+.all-container {
+  animation: slide 10s ease-in-out;
+}
+@keyframes slide {
+  0% {
+    position: relative;
+    top: -35rem;
+  }
+  100% {
+    position: relative;
+    top: 0;
+  }
+}
+.happy-birthday {
+  text-align: center;
+  width: 600px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(nick-fewings-kmLUcvhqhSo-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  color: white;
+  border-radius: 20px;
+  box-shadow: 0 0 10px blue;
+}
+.first {
+  font-size: 50px;
+}
